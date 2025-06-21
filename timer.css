@@ -1,0 +1,166 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom right, #1b103d, #4c1c7a);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+  padding: 2rem;
+  width: 90%;
+  max-width: 600px;
+}
+
+/* Header */
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #72aaff;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+}
+
+/* Navigation Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tab {
+  background: #332b4d;
+  padding: 0.5rem 1.2rem;
+  border-radius: 10px;
+  color: #ccc;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.tab:hover,
+.tab.active {
+  background: #438eff;
+  color: white;
+  font-weight: bold;
+}
+
+/* Timer Card */
+.timer-card {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2rem;
+}
+
+/* Main Display */
+.main-time {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+/* Inputs */
+.inputs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.inputs input {
+  padding: 0.6rem;
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Countdown Display */
+#countdownDisplay {
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: #aabaff;
+}
+
+/* Buttons */
+.button-group,
+#controls {
+  margin-top: 1.5rem;
+}
+
+button {
+  background-color: #438eff;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #316dcc;
+}
+
+button.reset {
+  background-color: #e74c3c;
+}
+
+button.reset:hover {
+  background-color: #c0392b;
+}
+
+/* Footer Button */
+.details-button {
+  margin-top: 1rem;
+  background-color: #40196b;
+  color: rgb(76, 76, 202);
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.details-button:hover {
+  background-color: #572f96;
+}
+
+/* Footer */
+footer {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+footer a {
+  color: #76a3ff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

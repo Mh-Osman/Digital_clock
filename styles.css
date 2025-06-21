@@ -1,0 +1,136 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom right, #1b103d, #4c1c7a);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+    padding: 2rem;
+    width: 90%;
+    max-width: 600px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.3rem;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #72aaff;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 1.5rem;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.tab {
+    background: #332b4d;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    color: #ccc;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.tab:hover, .tab.active {
+    background: #438eff;
+    color: white;
+    font-weight: bold;
+}
+
+.clock-card {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    margin-bottom: 2rem;
+}
+
+.main-time {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.date {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #ccc;
+}
+
+.time-details {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.time-box {
+    background: #2e2355;
+    padding: 1rem;
+    border-radius: 12px;
+    width: 30%;
+}
+
+.time-box .label {
+    font-size: 0.8rem;
+    color: #9f9fed;
+    display: block;
+    margin-bottom: 0.3rem;
+}
+
+.time-box span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Footer Button */
+.details-button {
+  margin-top: 1rem;
+  background-color: #40196b;
+  color: rgb(76, 76, 202);
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.details-button:hover {
+  background-color: #572f96;
+}
+
+footer {
+    font-size: 0.8rem;
+    color: #ccc;
+}
+
+footer a {
+    color: #76a3ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

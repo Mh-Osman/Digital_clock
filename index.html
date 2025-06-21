@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeKeeper</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="clock.js" defer></script>
+    <script src="details.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="clock-icon">🕒</i> <span class="highlight">TimeKeeper</span></h1>
+            <p class="subtitle">Professional timing solution</p>
+        </header>
+
+        <nav class="tabs">
+            <a href="index.html" class="tab active">Clock</a>
+            <a href="stopwatch.html" class="tab">Stopwatch</a>
+            <a href="timer.html" class="tab">Timer</a>
+        </nav>
+
+        <main class="clock-card">
+            <div id="c1" class="main-time">23:21:47</div>
+            <div id="c2" class="date">Saturday, June 21, 2025</div>
+
+            <div class="time-details">
+                <div class="time-box">
+                    <span class="label" style="color: blue;">Hour</span>
+                    <span id="hours">23</span>
+                </div>
+                <div class="time-box">
+                    <span class="label" style="color: green;">Minute</span>
+                    <span id="minutes">21</span>
+                </div>
+                <div class="time-box">
+                    <span class="label">Second</span>
+                    <span id="seconds">47</span>
+                </div>
+            </div>
+        </main>
+      <button id="mydetails" class="details-button">My Details</button>
+        <footer id="footer" style="display: none;"> 
+            <p>Made with ❤️ by Md: Osman Gani</p>
+            <p>Purpose: To practice JS functions and DOM manipulation</p>
+            <p>Email: osmangani1osm@gmail.com</p>
+            <p>GitHub: <a href="https://github.com/Mh-Osman" target="_blank">Mh-Osman</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/md-osman-gani-646b9a352" target="_blank">Md: Osman Gani</a></p>
+        </footer>
+    </div>
+</body>
+
+</html>

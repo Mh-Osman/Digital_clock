@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TimeKeeper - Timer</title>
+  <link rel="stylesheet" href="timer.css" />
+  <script src="details.js" defer></script>
+  <script src="timer.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1><i class="clock-icon">🕒</i> <span class="highlight">TimeKeeper</span></h1>
+      <p class="subtitle">Professional timing solution</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="tabs">
+      <a href="index.html" class="tab">Clock</a>
+      <a href="stopwatch.html" class="tab">Stopwatch</a>
+      <a href="timer.html" class="tab active">Timer</a>
+    </nav>
+
+    <!-- Timer Card -->
+    <main class="timer-card">
+      <div id="display" class="main-time">00:00:00</div>
+
+      <div id="controls">
+        <h4>Set Timer</h4>
+        <div class="inputs">
+          <input type="number" id="min" placeholder="Minute" min="0" value="0" style="background-color: #475569;" />
+          <input type="number" id="sec" placeholder="Second" min="0" max="59" value="0" style="background-color: #475569;" />
+        </div>
+        <button id="startBtn" style="background-color: #a855f7;">Set Time</button>
+      </div>
+
+      <div id="countdown" style="display: none;">
+        <h4>Countdown</h4>
+        <div id="countdownDisplay">00:00:00</div>
+      </div>
+
+      <div class="button-group">
+        <button id="startStopBtn">Start</button>
+        <button id="resetBtn" class="reset">Reset</button>
+      </div>
+    </main>
+
+    <!-- Footer Toggle -->
+    <button id="mydetails" class="details-button">My Details</button>
+
+    <!-- Footer -->
+    <footer id="footer" style="display: none;">
+      <p>Made with ❤️ by Md: Osman Gani</p>
+      <p>Purpose: To practice JS functions and DOM manipulation</p>
+      <p>Email: osmangani1osm@gmail.com</p>
+     <p>GitHub: <a href="https://github.com/Mh-Osman" target="_blank">Mh-Osman</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/md-osman-gani-646b9a352" target="_blank">Md: Osman Gani</a></p>
+    </footer>
+  </div>
+</body>
+
+</html>
